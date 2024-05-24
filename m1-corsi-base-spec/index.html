@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="js/cards/card.js"></script>
   </head>
-  <body class="impress-not-supported">
+  <body class="impress-not-supported transform-gpu">
     <div class="fallback-message">
       <p>
         Your browser <b>doesn't support the features required</b> by impress.js,
@@ -46,7 +46,8 @@
       </section>
       <section class="step slide" data-x="2880">
         <h2>Corsi base</h2>
-        <div class="grid grid-cols-3 gap-6">
+        <p>Quanti sono? Quali sono?</p>
+        <div class="substep grid grid-cols-3 gap-6">
           <corso-card codice="P0"></corso-card>
           <corso-card codice="P1"></corso-card>
           <corso-card codice="P2"></corso-card>
@@ -55,9 +56,37 @@
         </div>
         <p class="text-red-500">TODO: salvamento</p>
       </section>
-      <section class="step" data-x="4320">
-        <h2>Specializzazioni</h2>
+      <section class="step slide flex flex-col" data-x="4320">
+        <h2>Specializzazioni (per P1/P2)</h2>
         <p>Quante sono? Quali sono?</p>
+        <div class="substep flex-1 overflow-y-auto">
+          <div class="grid grid-cols-4 gap-6">
+            <corso-card codice="PAro"></corso-card>
+            <corso-card codice="PAs0"></corso-card>
+            <corso-card codice="PAs1"></corso-card>
+            <corso-card codice="PAs2"></corso-card>
+            <corso-card codice="PBio1"></corso-card>
+            <corso-card codice="PBio2"></corso-card>
+            <corso-card codice="PBioL"></corso-card>
+            <corso-card codice="PBioT"></corso-card>
+            <corso-card codice="PDpv1"></corso-card>
+            <corso-card codice="PFs"></corso-card>
+            <corso-card codice="PMs"></corso-card>
+            <corso-card codice="PNot"></corso-card>
+            <corso-card codice="PNx1"></corso-card>
+            <corso-card codice="POn"></corso-card>
+            <corso-card codice="POpc1"></corso-card>
+            <corso-card codice="POpc1"></corso-card>
+            <corso-card codice="PQt"></corso-card>
+            <corso-card codice="PQt"></corso-card>
+            <corso-card codice="PQt"></corso-card>
+            <corso-card codice="PRs"></corso-card>
+            <corso-card codice="PSg"></corso-card>
+            <corso-card codice="PSm1"></corso-card>
+            <corso-card codice="PSp1"></corso-card>
+            <corso-card codice="PVs"></corso-card>
+          </div>
+        </div>
       </section>
       <section
         id="flowchart"
