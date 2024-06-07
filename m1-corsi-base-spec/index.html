@@ -2,10 +2,10 @@
 <html>
   <head>
     <title>Corsi base AR & specializzazioni</title>
-    <link rel="stylesheet" href="./css/impress-common.css" />
-    <link rel="stylesheet" href="./css/impress-demo.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="js/cards/card.js"></script>
+    <link rel="stylesheet" href="/m1-corsi-base-spec/css/impress-common.css" />
+    <link rel="stylesheet" href="/m1-corsi-base-spec/css/impress-demo.css" />
+    <link rel="stylesheet" href="/m1-corsi-base-spec/css/style.css" />
+    <script src="/m1-corsi-base-spec/js/cards/card.js"></script>
   </head>
   <body class="impress-not-supported transform-gpu">
     <div class="fallback-message">
@@ -19,22 +19,25 @@
       </p>
     </div>
     <div id="impress">
-      <section class="step slide flex justify-center items-center">
+      <section class="flex items-center justify-center step slide">
         <div>
           <h1 class="mb-6 text-center">
             Corsi Base di competenza M1<br />
             Corsi di Specializzazione di competenza M1
           </h1>
           <div class="w-48 mx-auto">
-            <img src="./img/cefis.jpeg" alt="Cefis BO MO FE" />
+            <img
+              src="/m1-corsi-base-spec/img/cefis.jpeg"
+              alt="Cefis BO MO FE"
+            />
           </div>
         </div>
       </section>
-      <section class="step slide flex flex-col" data-x="1440">
+      <section class="flex flex-col step slide" data-x="1440">
         <h2>Il percorso didattico</h2>
-        <div class="flex-1 flex justify-center items-center">
+        <div class="flex items-center justify-center flex-1">
           <img
-            src="./img/document-filled-svgrepo-com.svg"
+            src="/m1-corsi-base-spec/img/document-filled-svgrepo-com.svg"
             class="w-48"
             alt="Programma Didattico"
           />
@@ -47,7 +50,7 @@
       <section class="step slide" data-x="2880">
         <h2>Corsi base</h2>
         <p>Quanti sono? Quali sono?</p>
-        <div class="substep grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-3 gap-6 substep">
           <corso-card codice="P0"></corso-card>
           <corso-card codice="P1"></corso-card>
           <corso-card codice="P2"></corso-card>
@@ -56,10 +59,10 @@
         </div>
         <p class="text-red-500">TODO: salvamento</p>
       </section>
-      <section class="step slide flex flex-col" data-x="4320">
+      <section class="flex flex-col step slide" data-x="4320">
         <h2>Specializzazioni (per P1/P2)</h2>
         <p>Quante sono? Quali sono?</p>
-        <div class="substep flex-1 overflow-y-auto">
+        <div class="flex-1 overflow-y-auto substep">
           <div class="grid grid-cols-4 gap-6">
             <corso-card codice="PAro"></corso-card>
             <corso-card codice="PAs0"></corso-card>
@@ -103,27 +106,14 @@
         data-scale="0.8"
         class="step w-[1440px] h-[865px]"
       >
-        <div class="notes">Il punto di ingresso per molti è il P0</div>
-      </section>
-      <section class="step debug" data-x="3000" data-y="2050" data-rotate="90">
-        <h2>P0: brevetto turistico</h2>
-        <p>Cosa è come si fa</p>
         <div class="notes">
+          Il punto di ingresso per molti è il P0 P0: brevetto turistico<br />
           Discorso sul p0, chi può rilasciarlo e come si fa
         </div>
       </section>
       <section
-        data-x="2000"
-        data-y="1900"
-        data-rotate="90"
-        data-scale="1.6"
-        class="step w-[1440px] h-[865px]"
-      >
-        <div class="notes">focus sul primo livello</div>
-      </section>
-      <section
-        class="step slide-box overflow-y-auto w-[1900px] h-[900px]"
-        data-x="4500"
+        class="overflow-y-auto step slide draggable-container"
+        data-x="4320"
         data-y="1000"
       >
         <h2 class="mb-4">
@@ -137,15 +127,26 @@
           <corso-card codice="PFs"></corso-card>
         </div>
       </section>
+      <section class="step slide" data-x="5760" data-y="1000">
+        <h2 class="mb-4">
+          Quali specializzazioni si possono insegnare <em>senza</em> un brevetto
+          M1?
+        </h2>
+      </section>
       <section
-        class="step slide-box overflow-y-auto w-[1900px] h-[900px]"
-        data-x="4500"
-        data-y="2000"
+        data-x="2000"
+        data-y="1900"
+        data-rotate="90"
+        data-scale="1.6"
+        class="step w-[1440px] h-[865px]"
       >
+        <div class="notes">Maxi schema <br />focus sul primo livello</div>
+      </section>
+      <section class="step slide" data-x="4320" data-y="2000">
         <h2 class="mb-4">
           Quali specializzazioni possono essere conseguite con un brevetto P1?
         </h2>
-        <div class="grid grid-cols-5 gap-6 text-sm items-stretch">
+        <div class="grid grid-cols-5 gap-6">
           <corso-card codice="POn"></corso-card>
           <corso-card codice="PNot"></corso-card>
           <corso-card codice="PNx1"></corso-card>
@@ -161,6 +162,11 @@
           <corso-card codice="PQt"></corso-card>
         </div>
       </section>
+      <section class="step slide" data-x="5760" data-y="2000">
+        <h2 class="mb-4">
+          Quali specializzazioni si possono insegnare con un brevetto M1?
+        </h2>
+      </section>
 
       <section
         data-x="850"
@@ -172,11 +178,7 @@
         <div class="notes">focus sul secondo livello</div>
       </section>
 
-      <section
-        class="step slide-box overflow-y-auto w-[1900px] h-[900px]"
-        data-x="4500"
-        data-y="3000"
-      >
+      <section class="step slide" data-x="4320" data-y="3000">
         <h2 class="mb-4">
           Quali specializzazioni possono essere conseguite con un brevetto P2?
         </h2>
@@ -191,14 +193,6 @@
       </section>
       <section class="step" data-x="-300" data-y="1500">
         Domande
-        <ol>
-          <li>
-            quali specializzazioni si possono insegnare con un brevetto M1?
-          </li>
-          <li>
-            quali specializzazioni si possono insegnare senza brevetto M1?
-          </li>
-        </ol>
 
         <p>il nitrox eh</p>
       </section>
@@ -222,7 +216,7 @@
       ></div>
     </div>
 
-    <script src="js/impress.js"></script>
+    <script src="/m1-corsi-base-spec/js/impress.js"></script>
     <script>
       window.impress ||
         document.write(
