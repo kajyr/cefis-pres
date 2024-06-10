@@ -14,6 +14,14 @@ h2 {
   @apply text-5xl font-bold;
 }
 
+ol {
+  @apply list-decimal list-inside;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+
 .slide {
   width: 1400px;
   height: 865px;
@@ -21,7 +29,7 @@ h2 {
 }
 
 .slide h2 {
-  @apply mb-6;
+  @apply mb-8;
 }
 
 .slide-box {
@@ -34,6 +42,10 @@ h2 {
 
 #flowchart {
   opacity: 1;
+}
+
+.card-grid {
+  @apply grid grid-cols-4 gap-6 mb-8;
 }
 
 /*

@@ -35,6 +35,8 @@ const map = {
   PSg: { title: "Immersione Sotto i Ghiacci" },
   POpc1: { title: "Aiuto Operatore Subacqueo di Protezione Civile" },
   PAro: { title: "ARO" },
+  PSd1: { title: "Advanced Skills Diver" },
+  PSd2: { title: "Technical Skills Diver" },
 };
 
 module.exports = (config) => {
@@ -46,9 +48,9 @@ module.exports = (config) => {
   });
 
   // Universal Shortcodes (Adds to Liquid, Nunjucks, JavaScript, Handlebars)
-  config.addShortcode("card", function (codice, twitterUsername) {
+  config.addShortcode("card", function (codice, bg = "bg-white") {
     return `    
-    <article class="card w-sm p-6 bg-white border border-gray-200 rounded-lg shadow h-full hover:bg-gray-100 flex flex-col">
+    <article class="card w-sm p-6 ${bg} border border-gray-200 rounded-lg shadow h-full hover:bg-gray-100 flex flex-col">
       <h5 class="mb-2 text-xl  tracking-tight text-gray-900"><span class="font-mono font-bold">${codice}</span>
       - ${map[codice]?.title}</h5>
       <div class="flex-1"></div>

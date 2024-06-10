@@ -3,6 +3,22 @@
     <div class="flex-1 w-full">
         <img src="img/table-p1.png" alt="Tabella corso P1" class="object-contain w-full mx-auto"/>
     </div>
+    <div class="notes">
+        <p>
+            Allievi:<br/>
+            Primo approccio alla subacquea (?)<br/>
+            Alte aspettative<br/>
+            Aspetto emotivo<br/>
+            Rinuncia<br/>
+        </p>
+        <p>
+            Istruttore<br/>
+            Controllo<br/>
+            “Basse” aspettative<br/>
+            Approccio decisivo<br/>
+            Possibilità di coinvolgimento<br/>
+        </p>
+    </div>
 </section>
 <section class="flex flex-col step slide" data-x="5760" data-y="910">
     <h2 class="mb-8">1° Grado AR</h2>
@@ -11,31 +27,34 @@
     </div>
 </section>
 <section class="flex flex-col step slide" data-x="5760" data-y="1820">
-    <h2>1° Grado AR</h2>
-    <p>Quali specializzazioni?</p>
-    <div class="flex-1 overflow-y-auto">
-        <div class="grid grid-cols-4 gap-6">
-            {% card "POn" %}
-            {% card "PNot" %}
-            {% card "PNx1" %}
-            {% card "PVs" %}
-            {% card "PMs" %}
-            {% card "PAs1" %}
-            {% card "PSm1" %}
-
-            {# 
-                        P2:
-           <corso-card codice="PRs"></corso-card> 
-           <corso-card codice="PAs2"></corso-card>
-                       <corso-card codice="PDpv1"></corso-card>
-                <corso-card codice="PSp1"></corso-card>  
-                   <corso-card codice="PQt"></corso-card>
-            <corso-card codice="PAro"></corso-card>
-
-    <corso-card codice="POpc1"></corso-card>
-            <corso-card codice="PSg"></corso-card>
-
-           #}
-        </div>
+    <h2>1° Grado AR - specializzazioni</h2>
+    <div class="card-grid">
+        {% card "POn" %}
+        {% card "PNot" %}
+        {% card "PNx1" %}
+        {% card "PVs" %}
+        {% card "PMs" %}
+        {% card "PAs1" %}
     </div>
+    <div class="card-grid">
+        {% card "PSm1" %}
+        {% card "PSd1" %}
+        {% card "PSd2" %}
+    </div>
+    <div class="notes">
+        Secondo me Orientamento è uno dei corsi più interessanti, e sicuramente piu sottovalutati.
+        Dove si comincia a passare da subacqueo “vittima” a sub responsabile, che sa dove stiamo andando, idealmente sa avventurarsi in una immersione. 
+        Grande test sulla determinazione nel subacqueo.
+    </div>
+</section>
+<section class="relative flex flex-col step slide" data-x="5760" data-y="2730">
+    <h2 class="">Domande scomode</h2>
+    <ol class="mt-16 text-3xl leading-loose">
+        <li class="substep">Io ho già fatto tante immersioni di notte, perché dovrei fare il brevetto di notturna?</li>
+        <li class="substep">Ma voi veramente andate in giro con la bussola? Non basta seguire la guida?</li>
+        <li class="substep">Beh il nitrox, ma non possiamo fare subito il trimix?</li>
+    </ol>
+    <div class="absolute text-9xl top-12 right-8">
+          🙋🏼‍♀️ 🙋🏻 🙋🏾‍♂️
+        </div>
 </section>

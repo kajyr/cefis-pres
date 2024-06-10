@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>Corsi base AR & specializzazioni</title>
-    <link rel="stylesheet" href="assets/impress-common.css" />
-    <link rel="stylesheet" href="assets/impress-demo.css" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/impress-common.css"/>
+    <link rel="stylesheet" href="assets/impress-demo.css"/>
+    <link rel="stylesheet" href="assets/style.css"/>
     <script src="js/cards/card.js"></script>
   </head>
   <body class="impress-not-supported transform-gpu">
@@ -21,48 +21,50 @@
     </div>
     #}
     <div id="impress">
-      {% include 'title.njk' %} {% include 'percorso-didattico.njk' %}
+      {% include 'title.njk' %}
+      {% include 'percorso-didattico.njk' %}
 
       <section class="step slide" data-x="2880" data-y="0">
         <h2>Corsi base</h2>
-        <p>Quanti sono? Quali sono?</p>
-        <div class="grid grid-cols-3 gap-6">
-          {% card "P0" %} {% card "P1" %} {% card "P2" %} {% card "P3" %} {%
-          card "PAiAr" %}
+        <p class="mb-8 text-3xl">Quanti sono? Quali sono?</p>
+        <div class="card-grid">
+          {% card "P0" %}
+          {% card "P1" %}
+          {% card "P2" %}
+        </div>
+        <div class="card-grid">
+          {% card "P3", "bg-rose-100" %}
+          {% card "PAiAr", "bg-rose-100" %}
         </div>
       </section>
+      <section
+        id="flowchart"
+        data-x="1640"
+        data-y="3020"
+        data-scale="4"
+        class="step bg-flowchart bg-center bg-contain bg-no-repeat w-[1400px] h-[860px]"
+      ></section>
+      {% include 'flow-p0.njk' %}
+      {% include 'flow-p1.njk' %}
+      {% include 'flow-p2.njk' %}
+      {% include 'flow-m1.njk' %}
 
-      {% include 'flow-p0.njk' %} {% include 'flow-p1.njk' %}
-      <section class="step slide" data-x="4320" data-y="3000">
-        <h2 class="mb-4">
-          Quali specializzazioni possono essere conseguite con un brevetto P2?
-        </h2>
-        <div class="grid grid-cols-5 gap-6 text-sm">
-          <corso-card codice="PDpv1"></corso-card>
-          <corso-card codice="PQt"></corso-card>
-          <corso-card codice="PSg"></corso-card>
-          <corso-card codice="POpc1"></corso-card>
-          <corso-card codice="PSp1"></corso-card>
-          <corso-card codice="PAro"></corso-card>
+      <section class="relative step slide" data-x="10080" data-y="0">
+        <h2>Di cosa non abbiamo parlato</h2>
+        <ul class="text-3xl list-disc list-inside">
+          <li>Percorso Didattico primo soccorso e sicurezza</li>
+          <li>Percorso Didattico diversamente abili</li>
+          <li>Percorso Didattico immersioni avanzate</li>
+          <li>Percorso Didattico minisub</li>
+          <li>Percorso Didattico rebreather</li>
+        </ul>
+        <div class="absolute w-64 text-9xl top-24 right-8 -rotate-12">
+          🤯
         </div>
       </section>
-      <section class="step" data-x="-300" data-y="1500">
-        Trivia
-        <h2 class="mb-4">
-          Quali specializzazioni si possono insegnare con un brevetto M1?
-        </h2>
-        <p>il nitrox eh</p>
-      </section>
-      <section class="step" data-y="2000">
-        <p>voi ora</p>
-      </section>
-      <section class="step" data-y="2500">
-        ma quali richiedono competenze specifiche?
-        <p>tipo archeo e bio</p>
-      </section>
-      <section class="step" data-y="3000">
-        Altre specializzazioni degne di nota Skills Diver Immersioni Avanzate
-        Corsi M2
+      <section class="relative step slide" data-x="10080" data-y="0">
+        <h2>Domande?</h2>
+        <p class="mb-8 text-3xl">(Voi)</p>
       </section>
       <div
         id="overview"
@@ -77,10 +79,7 @@
     <script src="js/tippy.js"></script>
     <script src="js/impress.js"></script>
     <script>
-      window.impress ||
-        document.write(
-          '<script src="https://cdn.jsdelivr.net/gh/impress/impress.js@2.0.0/js/impress.js">\x3C/script>'
-        );
+      window.impress || document.write('<script src="https://cdn.jsdelivr.net/gh/impress/impress.js@2.0.0/js/impress.js">\x3C/script>');
     </script>
     <script>
       impress().init();
