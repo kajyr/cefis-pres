@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Corsi base AR & specializzazioni</title>
+    <link rel="stylesheet" href="assets/impress-common.css" />
+    <link rel="stylesheet" href="assets/impress-demo.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="js/cards/card.js"></script>
+  </head>
+  <body class="impress-not-supported transform-gpu">
+    {#
+    <div class="fallback-message">
+      <p>
+        Your browser <b>doesn't support the features required</b> by impress.js,
+        so you are presented with a simplified version of this presentation.
+      </p>
+      <p>
+        For the best experience please use the latest <b>Chrome</b>,
+        <b>Safari</b> or <b>Firefox</b> browser.
+      </p>
+    </div>
+    #}
+    <div id="impress">
+      {% include 'title.njk' %} {% include 'percorso-didattico.njk' %}
+
+      <section class="step slide" data-x="2880" data-y="0">
+        <h2>Corsi base</h2>
+        <p>Quanti sono? Quali sono?</p>
+        <div class="grid grid-cols-3 gap-6">
+          {% card "P0" %} {% card "P1" %} {% card "P2" %} {% card "P3" %} {%
+          card "PAiAr" %}
+        </div>
+      </section>
+
+      {% include 'flow-p0.njk' %} {% include 'flow-p1.njk' %}
+      <section class="step slide" data-x="4320" data-y="3000">
+        <h2 class="mb-4">
+          Quali specializzazioni possono essere conseguite con un brevetto P2?
+        </h2>
+        <div class="grid grid-cols-5 gap-6 text-sm">
+          <corso-card codice="PDpv1"></corso-card>
+          <corso-card codice="PQt"></corso-card>
+          <corso-card codice="PSg"></corso-card>
+          <corso-card codice="POpc1"></corso-card>
+          <corso-card codice="PSp1"></corso-card>
+          <corso-card codice="PAro"></corso-card>
+        </div>
+      </section>
+      <section class="step" data-x="-300" data-y="1500">
+        Trivia
+        <h2 class="mb-4">
+          Quali specializzazioni si possono insegnare con un brevetto M1?
+        </h2>
+        <p>il nitrox eh</p>
+      </section>
+      <section class="step" data-y="2000">
+        <p>voi ora</p>
+      </section>
+      <section class="step" data-y="2500">
+        ma quali richiedono competenze specifiche?
+        <p>tipo archeo e bio</p>
+      </section>
+      <section class="step" data-y="3000">
+        Altre specializzazioni degne di nota Skills Diver Immersioni Avanzate
+        Corsi M2
+      </section>
+      <div
+        id="overview"
+        class="step"
+        data-x="2500"
+        data-y="1500"
+        data-scale="7"
+      ></div>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/tippy.js"></script>
+    <script src="js/impress.js"></script>
+    <script>
+      window.impress ||
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/gh/impress/impress.js@2.0.0/js/impress.js">\x3C/script>'
+        );
+    </script>
+    <script>
+      impress().init();
+    </script>
+  </body>
+</html>

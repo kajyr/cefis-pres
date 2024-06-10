@@ -2,7 +2,7 @@
 
 Slides disponibili su GH Pages:
 
-- [https://kajyr.github.io/cefis-pres/m1-corsi-base-spec/](m1-corsi-base-spec)
+- [m1-corsi-base-spec](https://kajyr.github.io/cefis-pres/m1-corsi-base-spec)
 
 ## Other
 

@@ -57,12 +57,18 @@ class Card extends HTMLElement {
   // connect component
   connectedCallback() {
     this.innerHTML = `    
-    <div class="card w-sm p-6 bg-white border border-gray-200 rounded-lg shadow h-full hover:bg-gray-100">
+    <article class="card w-sm p-6 bg-white border border-gray-200 rounded-lg shadow h-full hover:bg-gray-100 flex flex-col">
       <h5 class="mb-2 text-xl  tracking-tight text-gray-900"><span class="font-mono font-bold">${
         this.codice
       }</span>
       - ${map[this.codice]?.title}</h5>
-    </div>`;
+      <div class="flex-1"></div>
+      <footer class="flex justify-end">
+      <button>
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-question-mark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" /><path d="M12 19l0 .01" /></svg>
+      </button>
+        </footer>
+    </article>`;
   }
 }
 /*       <p class="font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>

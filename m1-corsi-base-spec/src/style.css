@@ -17,7 +17,7 @@ h2 {
 .slide {
   width: 1400px;
   height: 865px;
-  @apply py-10 px-16 bg-white  border border-gray-300 rounded-lg shadow-md text-lg leading-9;
+  @apply px-16 py-10 text-lg leading-9 bg-white border border-gray-300 rounded-lg shadow-md;
 }
 
 .slide h2 {
@@ -25,7 +25,7 @@ h2 {
 }
 
 .slide-box {
-  @apply py-10 px-16 bg-white  border border-gray-300 rounded-lg shadow-md text-lg leading-9;
+  @apply px-16 py-10 text-lg leading-9 bg-white border border-gray-300 rounded-lg shadow-md;
 }
 
 .debug {

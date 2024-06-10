@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss src/style.css -o css/style.css ",
-    "watch": "postcss src/style.css -o css/style.css -w"
+    "build": "eleventy && tailwindcss -i src/style.css -o public/assets/style.css",
+    "watch": "eleventy --serve",
+    "watchCss": "tailwindcss -i  src/style.css -o public/assets/style.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "css-loader": "^7.1.2",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",

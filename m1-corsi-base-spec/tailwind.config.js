@@ -1,9 +1,10 @@
 module.exports = {
-  content: ["./*.html", "./js/**/*.js"],
+  content: ["./src/*.html", "./src/**/*.js", "./src/**/*.njk"],
   theme: {
     extend: {
       backgroundImage: {
         flowchart: "url('../img/flow-allievi-ar.png')",
+        fipsaswebpd: "url('../img/fipsas-website-pd.png')",
       },
     },
   },
