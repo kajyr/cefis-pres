@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/style.css"/>
     <script src="js/cards/card.js"></script>
   </head>
-  <body class="impress-not-supported transform-gpu">
+  <body class="impress-not-supported">
     {#
     <div class="fallback-message">
       <p>
@@ -25,6 +25,23 @@
       {% include 'percorso-didattico.njk' %}
 
       <section class="step slide" data-x="2880" data-y="0">
+        <h2>Definizioni</h2>
+        <p class="mb-8 text-3xl">Cosa vuole dire "Corsi base?"</p>
+        <p class="mb-8 text-3xl">Cosa vuole dire "Corsi di specializzazione?"</p>
+        <p class="mb-8 text-3xl">Quali sono le "Materie complementari"?</p>
+        <div class="notes">
+          <p>I corsi base sono le pietre miliari della progressione della carriera di un sub</p>
+          <p>I corsi di specializzazione sono dei corsi aggiuntivi, che aprono rami del percorso da approfondire a seconda dei propri interessi</p>
+          <p>
+        Le materie complementari sono i corsi di specializzazione che sono anche requisito obbligatorio per accedere ai corsi base successivi. POn PNx1 etc.
+     </p>
+        </div>
+      </section>
+      {% include 'flow-p0.njk' %}
+      {% include 'flow-p1.njk' %}
+      {% include 'flow-p2.njk' %}
+      {% include 'flow-m1.njk' %}
+      <section class="step slide" data-x="2880" data-y="910">
         <h2>Corsi base</h2>
         <p class="mb-8 text-3xl">Quanti sono? Quali sono?</p>
         <div class="card-grid">
@@ -62,9 +79,16 @@
           🤯
         </div>
       </section>
-      <section class="relative step slide" data-x="10080" data-y="0">
+      <section class="relative step slide" data-x="10080" data-y="910">
         <h2>Domande?</h2>
         <p class="mb-8 text-3xl">(Voi)</p>
+
+        <div class="w-full text-center text-9xl top-12 right-8 substep">
+          👋🏼
+        </div>
+        <div class="absolute w-64 text-9xl top-12 right-8">
+          🫵🏼
+        </div>
       </section>
       <div
         id="overview"
