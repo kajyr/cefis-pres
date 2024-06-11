@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy && tailwindcss -i src/style.css -o public/assets/style.css",
+    "build": "env NODE_ENV=production eleventy && tailwindcss -i src/style.css -o ../public/assets/style.css",
     "watch": "eleventy --serve",
-    "watchCss": "tailwindcss -i  src/style.css -o public/assets/style.css -w"
+    "watchCss": "tailwindcss -i  src/style.css -o ../public/assets/style.css -w"
   },
   "keywords": [],
   "author": "",

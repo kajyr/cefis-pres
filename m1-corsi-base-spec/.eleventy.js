@@ -68,7 +68,7 @@ module.exports = (config) => {
     htmlTemplateEngine: "njk",
     dir: {
       input: "src",
-      output: "public",
+      output: "../public",
     },
   };
 };
